@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Jun 17 00:57:04 2018
+# Process ID: 11896
+# Current directory: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/main.vds
+# Journal file: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

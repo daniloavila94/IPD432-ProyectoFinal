@@ -1,0 +1,914 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Jun 17 00:57:04 2018
+# Process ID: 11896
+# Current directory: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/main.vds
+# Journal file: E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7388 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 360.652 ; gain = 94.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:24]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_basic.v:10]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (1#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_rx.v:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_sync' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (2#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
+	Parameter INCREMENT bound to: 302 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (3#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_tx.v:10]
+	Parameter TX_IDLE bound to: 2'b00 
+	Parameter TX_START bound to: 2'b01 
+	Parameter TX_SEND bound to: 2'b10 
+	Parameter TX_STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (4#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (5#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'rx_tx_cmd_decoder' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter W_1 bound to: 4'b0001 
+	Parameter W_2 bound to: 4'b0010 
+	Parameter WRITING_A0 bound to: 4'b0011 
+	Parameter WRITING_A2 bound to: 4'b0101 
+	Parameter PROC_UART bound to: 4'b1111 
+	Parameter UART bound to: 4'b1110 
+	Parameter START_WAV bound to: 4'b1100 
+	Parameter WAIT_WAV bound to: 4'b1011 
+	Parameter SEND_WAV bound to: 4'b1010 
+	Parameter cero bound to: 15'b000000000000000 
+	Parameter suma_1 bound to: 15'b000000000000001 
+	Parameter ADD_TOT bound to: 15'b101011111100100 
+	Parameter ROWS bound to: 9'b010010110 
+	Parameter COL bound to: 9'b100101100 
+WARNING: [Synth 8-6014] Unused sequential element op_ready_reg was removed.  [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:117]
+INFO: [Synth 8-256] done synthesizing module 'rx_tx_cmd_decoder' (6#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/haar_wavelet.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LECTURA bound to: 4'b0001 
+	Parameter ESCRITURA bound to: 4'b0010 
+	Parameter FINISH bound to: 4'b0011 
+	Parameter WATERMARK bound to: 4'b0100 
+	Parameter cero bound to: 15'b000000000000000 
+	Parameter suma_1 bound to: 15'b000000000000001 
+	Parameter ADD_TOT bound to: 15'b101011111100100 
+INFO: [Synth 8-256] done synthesizing module 'haar_wavelet' (7#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/haar_wavelet.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LL' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:137]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LH' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:137]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HL' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:137]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HH' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:137]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LL_2' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:138]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LH_2' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:138]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HL_2' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:138]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HH_2' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:138]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LL_3' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:139]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_LH_3' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:139]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HL_3' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:139]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_in_HH_3' does not match port width (10) of module 'haar_wavelet' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:139]
+INFO: [Synth 8-638] synthesizing module 'haar_wavelet_inversa' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/haar_wavelet_inversa.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LECTURA bound to: 4'b0001 
+	Parameter ESCRITURA bound to: 4'b0010 
+	Parameter FINISH bound to: 4'b0011 
+	Parameter cero bound to: 15'b000000000000000 
+	Parameter suma_1 bound to: 15'b000000000000001 
+	Parameter ADD_TOT bound to: 15'b101011111100100 
+INFO: [Synth 8-256] done synthesizing module 'haar_wavelet_inversa' (8#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/haar_wavelet_inversa.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_out_LL' does not match port width (12) of module 'haar_wavelet_inversa' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:164]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_out_LH' does not match port width (12) of module 'haar_wavelet_inversa' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:164]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_out_HL' does not match port width (12) of module 'haar_wavelet_inversa' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:164]
+WARNING: [Synth 8-689] width (8) of port connection 'mem_out_HH' does not match port width (12) of module 'haar_wavelet_inversa' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:164]
+INFO: [Synth 8-638] synthesizing module 'BRAM' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/realtime/BRAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (9#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/realtime/BRAM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/unsigned_to_bcd.v:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (10#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/unsigned_to_bcd.v:22]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/clk_divider.v:19]
+	Parameter O_CLK_FREQ bound to: 480 - type: integer 
+	Parameter COUNTER_MAX bound to: 104165 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/clk_divider.v:19]
+INFO: [Synth 8-638] synthesizing module 'display_mux' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/display_mux.v:10]
+	Parameter DIG_0 bound to: 8'b00000001 
+	Parameter DIG_1 bound to: 8'b00000010 
+	Parameter DIG_2 bound to: 8'b00000100 
+	Parameter DIG_3 bound to: 8'b00001000 
+	Parameter DIG_4 bound to: 8'b00010000 
+	Parameter DIG_5 bound to: 8'b00100000 
+	Parameter DIG_6 bound to: 8'b01000000 
+	Parameter DIG_7 bound to: 8'b10000000 
+INFO: [Synth 8-638] synthesizing module 'bcd_to_ss' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_ss' (12#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'display_mux' (13#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/imports/uart/display_mux.v:10]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/main.v:24]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[0]
+WARNING: [Synth 8-3331] design main has unconnected port LED[15]
+WARNING: [Synth 8-3331] design main has unconnected port LED[14]
+WARNING: [Synth 8-3331] design main has unconnected port LED[13]
+WARNING: [Synth 8-3331] design main has unconnected port LED[12]
+WARNING: [Synth 8-3331] design main has unconnected port LED[11]
+WARNING: [Synth 8-3331] design main has unconnected port LED[10]
+WARNING: [Synth 8-3331] design main has unconnected port LED[9]
+WARNING: [Synth 8-3331] design main has unconnected port LED[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 404.738 ; gain = 138.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 404.738 ; gain = 138.988
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LL_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LL_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LH_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LH_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HL_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HL_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HH_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HH_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LL_3'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LL_3'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LH_3'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_LH_3'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HL_3'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HL_3'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HH_3'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'BANDA_HH_3'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0_REC_2'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A0_REC_2'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1_REC'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A1_REC'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2_REC'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A2_REC'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3_REC'
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/.Xil/Vivado-11896-DESKTOP-C10RBDL/dcp3/BRAM_in_context.xdc] for cell 'MEMORIA_A3_REC'
+Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/constrs_1/imports/constr/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/constrs_1/imports/constr/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/constrs_1/imports/constr/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 737.070 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_HH_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_HH_3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_HL_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_HL_3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_LH_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_LH_3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_LL_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BANDA_LL_3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A0_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A0_REC_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A1_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A1_REC' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A2_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A2_REC' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A3_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MEMORIA_A3_REC' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for BANDA_HH_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_HH_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_HL_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_HL_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_LH_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_LH_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_LL_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for BANDA_LL_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A0_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A0_REC_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A1_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A1_REC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A2_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A2_REC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A3_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MEMORIA_A3_REC. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'we_A1_reg' into 'we_A0_reg' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:122]
+INFO: [Synth 8-4471] merging register 'we_A3_reg' into 'we_A2_reg' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:123]
+INFO: [Synth 8-4471] merging register 'we_A1_2_reg' into 'we_A0_2_reg' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:124]
+INFO: [Synth 8-4471] merging register 'we_A3_2_reg' into 'we_A2_2_reg' [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:125]
+WARNING: [Synth 8-6014] Unused sequential element we_A1_reg was removed.  [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:122]
+WARNING: [Synth 8-6014] Unused sequential element we_A3_reg was removed.  [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:123]
+WARNING: [Synth 8-6014] Unused sequential element we_A1_2_reg was removed.  [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:124]
+WARNING: [Synth 8-6014] Unused sequential element we_A3_2_reg was removed.  [E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.srcs/sources_1/new/rx_tx_cmd_decoder.v:125]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_tx_cmd_decoder'
+INFO: [Synth 8-5544] ROM "we_A0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "we_A0_2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "add_A0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "primer_elemento_A0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'haar_wavelet'
+INFO: [Synth 8-5546] ROM "finish" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "we_LL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_in_LL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_in_LL_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'haar_wavelet_inversa'
+INFO: [Synth 8-5544] ROM "finish_inv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "we_inv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "out13" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'ss_select_q_reg' in module 'display_mux'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                         00000000
+                     W_1 |                       0000000010 |                         00000001
+              WRITING_A0 |                       0000000100 |                         00000011
+                     W_2 |                       0000001000 |                         00000010
+              WRITING_A2 |                       0000010000 |                         00000101
+               START_WAV |                       0000100000 |                         00001100
+                WAIT_WAV |                       0001000000 |                         00001011
+                SEND_WAV |                       0010000000 |                         00001010
+               PROC_UART |                       0100000000 |                         00001111
+                    UART |                       1000000000 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'rx_tx_cmd_decoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                         00000000
+                 LECTURA |                            00010 |                         00000001
+               ESCRITURA |                            00100 |                         00000010
+               WATERMARK |                            01000 |                         00000100
+                  FINISH |                            10000 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'haar_wavelet'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                 LECTURA |                               01 |                             0001
+               ESCRITURA |                               10 |                             0010
+                  FINISH |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'haar_wavelet_inversa'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                         00000000
+*
+                  iSTATE |                             0001 |                         00000001
+                 iSTATE0 |                             0010 |                         00000010
+                 iSTATE1 |                             0011 |                         00000100
+                 iSTATE2 |                             0100 |                         00001000
+                 iSTATE3 |                             0101 |                         00010000
+                 iSTATE4 |                             0110 |                         00100000
+                 iSTATE5 |                             0111 |                         01000000
+                 iSTATE7 |                             1000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ss_select_q_reg' using encoding 'sequential' in module 'display_mux'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 10    
+	   3 Input     10 Bit       Adders := 2     
+	   4 Input     10 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 10    
+	   3 Input      8 Bit       Adders := 3     
+	   5 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               15 Bit    Registers := 10    
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 21    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 3     
+	  10 Input     15 Bit        Muxes := 5     
+	   5 Input     15 Bit        Muxes := 3     
+	   4 Input     15 Bit        Muxes := 2     
+	  22 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   5 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	  10 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 11    
+	  10 Input      1 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_baud_tick_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module uart_basic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rx_tx_cmd_decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 5     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               15 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	  10 Input     15 Bit        Muxes := 5     
+	  22 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 31    
+Module haar_wavelet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 2     
+	   4 Input     10 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 3     
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   5 Input     15 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 9     
+Module haar_wavelet_inversa 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 3     
+	   5 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 8     
+Module unsigned_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_to_ss 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module display_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "add_A0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "primer_elemento_A0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_div_ss_display/clk_out" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A0[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A1[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A2[0]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[7]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[6]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[5]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[4]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[3]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[2]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[1]
+WARNING: [Synth 8-3331] design rx_tx_cmd_decoder has unconnected port mem_out_A3[0]
+WARNING: [Synth 8-3331] design main has unconnected port LED[15]
+WARNING: [Synth 8-3331] design main has unconnected port LED[14]
+WARNING: [Synth 8-3331] design main has unconnected port LED[13]
+WARNING: [Synth 8-3331] design main has unconnected port LED[12]
+WARNING: [Synth 8-3331] design main has unconnected port LED[11]
+WARNING: [Synth 8-3331] design main has unconnected port LED[10]
+WARNING: [Synth 8-3331] design main has unconnected port LED[9]
+WARNING: [Synth 8-3331] design main has unconnected port LED[8]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECODER/we_A0_2_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECODER/imagen_reg[1] )
+INFO: [Synth 8-3886] merging instance 'HAAR_INV/mem_in_A0_inv_reg[0]' (FDE) to 'HAAR_INV/mem_in_A2_inv_reg[0]'
+INFO: [Synth 8-3886] merging instance 'HAAR_INV/mem_in_A1_inv_reg[0]' (FDE) to 'HAAR_INV/mem_in_A2_inv_reg[0]'
+INFO: [Synth 8-3886] merging instance 'HAAR_INV/mem_in_A2_inv_reg[0]' (FDE) to 'HAAR_INV/mem_in_A3_inv_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\HAAR_INV/mem_in_A3_inv_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (DECODER/imagen_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DECODER/we_A0_2_reg) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (TRANSFORMADA_DE_HAAR/mem_in_HL_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (TRANSFORMADA_DE_HAAR/mem_in_HL_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (TRANSFORMADA_DE_HAAR/mem_in_HL_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (HAAR_INV/mem_in_A3_inv_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |BRAM          |        20|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BRAM     |     1|
+|2     |BRAM__1  |     1|
+|3     |BRAM__10 |     1|
+|4     |BRAM__11 |     1|
+|5     |BRAM__12 |     1|
+|6     |BRAM__13 |     1|
+|7     |BRAM__14 |     1|
+|8     |BRAM__15 |     1|
+|9     |BRAM__16 |     1|
+|10    |BRAM__17 |     1|
+|11    |BRAM__18 |     1|
+|12    |BRAM__19 |     1|
+|13    |BRAM__2  |     1|
+|14    |BRAM__3  |     1|
+|15    |BRAM__4  |     1|
+|16    |BRAM__5  |     1|
+|17    |BRAM__6  |     1|
+|18    |BRAM__7  |     1|
+|19    |BRAM__8  |     1|
+|20    |BRAM__9  |     1|
+|21    |BUFG     |     1|
+|22    |CARRY4   |   126|
+|23    |LUT1     |    28|
+|24    |LUT2     |   154|
+|25    |LUT3     |   118|
+|26    |LUT4     |   197|
+|27    |LUT5     |    73|
+|28    |LUT6     |   184|
+|29    |FDRE     |   654|
+|30    |FDSE     |     5|
+|31    |IBUF     |     3|
+|32    |OBUF     |    27|
+|33    |OBUFT    |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------------------------+------+
+|      |Instance               |Module                             |Cells |
++------+-----------------------+-----------------------------------+------+
+|1     |top                    |                                   |  1738|
+|2     |  DECODER              |rx_tx_cmd_decoder                  |   475|
+|3     |  HAAR_INV             |haar_wavelet_inversa               |   140|
+|4     |  TRANSFORMADA_DE_HAAR |haar_wavelet                       |   576|
+|5     |  clk_div_ss_display   |clk_divider                        |    46|
+|6     |  display_mux_inst     |display_mux                        |    17|
+|7     |  u32_to_bcd_inst      |unsigned_to_bcd                    |   148|
+|8     |  uart_basic_inst      |uart_basic                         |   134|
+|9     |    baud8_tick_blk     |uart_baud_tick_gen                 |    29|
+|10    |    baud_tick_blk      |uart_baud_tick_gen__parameterized0 |    29|
+|11    |    uart_rx_blk        |uart_rx                            |    49|
+|12    |      rx_sync_inst     |data_sync                          |     9|
+|13    |    uart_tx_blk        |uart_tx                            |    25|
++------+-----------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 737.070 ; gain = 471.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 737.070 ; gain = 138.988
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 737.070 ; gain = 471.320
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 737.070 ; gain = 479.211
+INFO: [Common 17-1381] The checkpoint 'E:/Danilo/Documents/Proyecto_Final_IPD432/Proyecto_Final_IPD432.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 737.070 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 17 00:58:17 2018...
